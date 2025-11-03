@@ -46,12 +46,12 @@ a {
   padding: 0 50px;
 }
 
-.nav-bar ul li {
+.nav-bar li {
   padding-top: 16px;
   font-size: 19px;
 }
 
-.nav-bar ul li a:hover {
+.nav-bar li a:hover {
   color: var(--main-color);
   padding-top: 16px;
   border-top: var(--main-color) 2px solid;
