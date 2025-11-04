@@ -16,7 +16,10 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
+
+/****** Header ***********/
 
 header {
   height: 79px;
@@ -35,7 +38,7 @@ a {
 
 .logo-img {
   height: 19px;
-  padding: 30px 50px;
+  padding: 30px 50px 30px 0;
 }
 
 .nav-bar ul {
@@ -47,15 +50,17 @@ a {
 }
 
 .nav-bar li {
-  padding-top: 16px;
+  padding-top: 17px;
   font-size: 19px;
 }
 
 .nav-bar li a:hover {
   color: var(--main-color);
-  padding-top: 16px;
+  padding-top: 15px;
   border-top: var(--main-color) 2px solid;
 }
+
+/****** Main container ***********/
 
 .main-container {
   width: 100%;
@@ -90,6 +95,123 @@ a {
 
 .neutral-star {
   color: var(--main-bg-color);
+}
+
+/****** Search section ***********/
+.search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 50px;
+}
+
+.search-section h3 {
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.main-title {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.form-group {
+  display: flex;
+  height: 49px;
+  gap: 0;
+}
+
+.form-group i {
+  background-color: var(--main-bg-color);
+  color: #000;
+  width: 50px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.form-group input {
+  border: 2px solid var(--main-bg-color);
+  border-right: none;
+  border-left: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.form-group button {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 132px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 700;
+}
+
+.filters-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.filters-list button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 25px;
+  padding: 15px 19px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.filters-list button:hover {
+  background-color: var(--filter-bg-color);
+}
+
+.filters-list p {
+  margin: 0;
+}
+
+.search-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 25px;
+  background-color: #fff;
+  color: var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
