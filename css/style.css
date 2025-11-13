@@ -415,6 +415,15 @@ p {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1300px) {
+  .activites-cards .card {
+    width: 47%;
+  }
+  .activites-cards img {
+    height: 300px;
+  }
+}
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
